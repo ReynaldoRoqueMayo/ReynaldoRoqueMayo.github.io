@@ -1,0 +1,257 @@
+@font-face {
+    font-family: fontPressStart;
+    src: url(/fonts/PressStart2P-Regular.ttf);
+}
+
+
+body {
+    background: #00bcd4;
+
+}
+
+header {
+    margin-top: 40px;
+    text-align: center;
+
+}
+
+main {
+    display: flex;
+    width: 940px;
+    margin: 40px auto;
+}
+
+.imgEncabezado {
+
+
+    
+    vertical-align: middle;
+    float: left;
+}
+
+#imagenBanner {
+
+    width: 150px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+h1 {
+    display: inline-block;
+    vertical-align: middle;
+    padding-left: 50px;
+    font-family: fontPressStart;
+    font-size: 25px;
+    text-shadow: -3px 3px white;
+}
+
+h3 {
+
+    padding : 0px 35px 0px 35px
+}
+
+.entradaTexto {
+    display: inline-block;
+    color: white;
+
+
+}
+
+.salidaTexto {
+    margin-left: 15px;
+    display: inline-block;
+    vertical-align: top;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 6px 5px 20px 0px black;
+    width: 351.2px;
+}
+
+.entradaTexto>textarea {
+    background: transparent;
+    color: white;
+    font-size: 40px;
+    border: dotted;
+    resize: none;
+
+}
+.mensajeSinEntrada {
+    padding: 25px;
+    display: inline-block;
+}
+
+.salidaTexto>textarea {
+
+    color: black;
+    font-size: 40px;
+    border: hidden;
+    resize: none;
+    border-radius: 20px;
+    background: transparent;
+}
+
+.bannerSalida {
+    text-align: center;
+    width: 100%;
+    margin-top: 35%;    
+    font-family: monospace;
+    font-size: 15px;
+
+}
+
+.acccionesEncriptar {
+    text-align: center;
+    padding: 20px;
+}
+
+
+#btnEncriptar {
+    border-radius: 25px;
+    font-size: 15px;
+    padding: 8px 90px;
+    color: #00bcd4;
+    background: #0a3871;
+    font-family: fantasy;
+
+
+
+
+}
+
+
+#btnDesencriptar {
+    border-radius: 25px;
+    font-size: 15px;
+    padding: 8px 90px;
+    color: #0a3871;
+    font-family: fantasy;
+    background: #00e2fe;
+
+
+}
+
+
+#btnDesencriptar:enabled:hover,#btnEncriptar:enabled:hover {
+   
+    animation: animacionBtn1 1s  infinite running;
+    animation-direction: alternate;
+   
+}
+
+
+.acccionesEncriptado {
+    text-align: center;
+    padding: 40px 20px 20px 20px;
+}
+
+@keyframes animacionBtn1 {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    5% {
+        transform: rotate(1eg);
+    }
+
+    
+    10% {
+        transform: rotate(2deg);
+    }
+
+    
+    15% {
+        transform: rotate(3deg);
+    }
+
+    
+    20% {
+        transform: rotate(4deg);
+    }
+    25% {
+        transform: rotate(5deg);
+    }
+
+    
+    30% {
+        transform: rotate(4deg);
+    }
+    35% {
+        transform: rotate(3deg);
+    }
+
+    
+    40% {
+        transform: rotate(2deg);
+    }
+    45% {
+        transform: rotate(1deg);
+    }
+
+    
+    50% {
+        transform: rotate(0deg);
+    }
+
+    55% {
+        transform: rotate(-1eg);
+    }
+
+    
+    60% {
+        transform: rotate(-2deg);
+    }
+
+    
+    65% {
+        transform: rotate(-3deg);
+    }
+
+    
+    70% {
+        transform: rotate(-4deg);
+    }
+    75% {
+        transform: rotate(-5deg);
+    }
+
+    
+    80% {
+        transform: rotate(-4deg);
+    }
+    85% {
+        transform: rotate(-3deg);
+    }
+
+    
+    90% {
+        transform: rotate(-2deg);
+    }
+    95% {
+        transform: rotate(-1deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+    
+
+}
+
+
+.acccionesEncriptado>button {
+    border-radius: 25px;
+    font-size: 15px;
+    padding: 8px 120px;
+    color: #000000;
+
+    background: transparent;
+    transition-duration: 0.5s;
+    font-family: fantasy;
+
+}
+
+.acccionesEncriptado>button:hover {
+
+    background-color: #0a3871;
+    color: white;
+    scale: 1.2;
+}
